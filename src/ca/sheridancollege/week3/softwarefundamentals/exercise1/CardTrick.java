@@ -1,4 +1,4 @@
-/*
+c/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
@@ -46,7 +46,7 @@ public class CardTrick {
         System.out.println(a.getValue());
         
         
-        System.out.println("Your card is " + a.getValue() + " of " + a.getSuit());
+        System.out.println("The card is..." + a.getValue() + " of " + a.getSuit());
         // and search magicHand here
         //Then report the result here
       
