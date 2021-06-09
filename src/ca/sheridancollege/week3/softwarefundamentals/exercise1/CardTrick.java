@@ -58,6 +58,8 @@ public class CardTrick {
             System.out.println("You are wrong");
         }
     
+        //Print card
+        System.out.printf("Your magic card is: %s %n", luckyCard.getSuit(), luckyCard.getValue());
     
     }
 }
