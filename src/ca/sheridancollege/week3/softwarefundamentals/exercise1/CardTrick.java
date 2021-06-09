@@ -43,8 +43,6 @@ public class CardTrick {
        
         c.setValue(input1.nextInt());
         
-        
-       
     }
     
 }
