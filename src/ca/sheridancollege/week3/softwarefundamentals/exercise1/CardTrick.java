@@ -10,18 +10,17 @@ import java.util.Random;
 import java.util.Scanner;
 
 /**
- * A class that models playing card Objects. Cards have
- * a value (note that Ace = 1, Jack -11, Queen =12, King = 13)
- * A suit (clubs, hearts, spades, diamonds).
- * There are 52 cards in a deck, no jokers.
- * This code is to be used in ICE1. When you create your own branch,
- * add your name as a modifier.
+ * A class that models playing card Objects. Cards have a value (note that Ace =
+ * 1, Jack -11, Queen =12, King = 13) A suit (clubs, hearts, spades, diamonds).
+ * There are 52 cards in a deck, no jokers. This code is to be used in ICE1.
+ * When you create your own branch, add your name as a modifier.
+ *
  * @author dancye
  * * @modifier Sandra Fernando 991634673
  */
 public class CardTrick {
-    
-    public static void main(String[] args){
+
+    public static void main(String[] args) {
 
         Card[] magicHand = new Card[7];
         Random rand = new Random();
@@ -36,5 +35,6 @@ public class CardTrick {
             //System.out.println("Suit : " + c.getSuit() + ", Value : " + c.getValue());
 
         }
-    
+
+    }
 }
