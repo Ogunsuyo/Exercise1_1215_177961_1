@@ -45,13 +45,7 @@ public class Card {
      * @param value the value to set
      */
     public void setValue(int value) {
-        if ((value < 1 )||( value > 10)){
-            System.out.println("Your number can only be from 1 to 10");
-        }
-        else{
-            this.value = value;
-        }
-        
+        this.value = value;
     }
    
    
