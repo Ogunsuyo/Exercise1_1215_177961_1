@@ -44,6 +44,24 @@ public class CardTrick {
         c.setValue(input1.nextInt());
         
         System.out.println("Your card number is "+ c.getValue() + " and it is suit of " + c.getSuit());
-    }
     
+    
+    
+        // and search magicHand here
+        Boolean a = false;
+        for (int i=0; i<magicHand.length; i++)
+             if(magicHand[i].getValue() == c.getValue() && magicHand[i].getSuit().equals(c.getSuit())){
+                a = true;
+            }
+        
+        
+        //Then report the result here
+        
+        if(a){
+            System.out.println("You win");
+        }else{
+            System.out.println("You lose");
+        }
+
+    }
 }
