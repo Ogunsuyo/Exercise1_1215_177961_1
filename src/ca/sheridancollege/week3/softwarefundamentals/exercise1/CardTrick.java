@@ -43,6 +43,7 @@ public class CardTrick {
        
         c.setValue(input1.nextInt());
         
+        System.out.println("Your card number is "+ c.getValue() + " and it is suit of " + c.getSuit());
     }
     
 }
