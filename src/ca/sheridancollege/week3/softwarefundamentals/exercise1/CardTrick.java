@@ -57,7 +57,7 @@ private static final Scanner sc = new Scanner(System.in);
             Card luckyCard = new Card();
             luckyCard.setSuit(userEnteredCardSuit);
             luckyCard.setValue(userEnteredCardValue);
-            System.out.println("You Picked : " + luckyCard.getSuit() + " " + luckyCard.getValue());
+            System.out.println("You Picked : " + luckyCard.getSuit().toLowerCase() + " " + luckyCard.getValue());
 
              // and search magicHand here
             for (Card card : magicHand) {
