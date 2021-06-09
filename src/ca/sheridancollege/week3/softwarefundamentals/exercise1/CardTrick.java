@@ -19,7 +19,7 @@ import java.util.Scanner;
  * * @modifier Sandra Fernando 991634673
  */
 public class CardTrick {
-
+private static final Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
 
         Card[] magicHand = new Card[7];
@@ -34,6 +34,38 @@ public class CardTrick {
             magicHand[i] = c;
             //System.out.println("Suit : " + c.getSuit() + ", Value : " + c.getValue());
 
+        }
+        
+        
+        try {
+            //insert code to ask the user for Card value and suit, create their card
+
+            int userEnteredCardValue;
+            String userEnteredCardSuit;
+
+            System.out.println("------Pick a card------");
+
+            System.out.print("Enter Card Value between [1-13]: ");
+            userEnteredCardValue = sc.nextInt();
+            sc.nextLine();
+            System.out.print("Enter a Suit from following [\"Hearts\", \"Diamonds\", \"Spades\", \"Clubs\"] : ");
+
+            userEnteredCardSuit = sc.nextLine();
+            if (!(userEnteredCardSuit.equalsIgnoreCase("Hearts") || userEnteredCardSuit.equalsIgnoreCase("Diamonds") || userEnteredCardSuit.equalsIgnoreCase("Spades") || userEnteredCardSuit.equalsIgnoreCase("Clubs"))) {
+                throw new Exception("invalid Suit");
+            }
+            Card luckyCard = new Card();
+            luckyCard.setSuit(userEnteredCardSuit);
+            luckyCard.setValue(userEnteredCardValue);
+           
+
+            // and search magicHand here
+            
+            //Then report the result here
+
+        } catch (Exception e) {
+            System.out.println("There was an error in your input, try again!");
+            System.out.println(e.getMessage());
         }
 
     }
