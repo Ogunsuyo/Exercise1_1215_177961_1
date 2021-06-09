@@ -59,8 +59,17 @@ private static final Scanner sc = new Scanner(System.in);
             luckyCard.setValue(userEnteredCardValue);
             System.out.println("You Picked : " + luckyCard.getSuit() + " " + luckyCard.getValue());
 
-            // and search magicHand here
-            
+             // and search magicHand here
+            for (Card card : magicHand) {
+                //System.out.println("Suit : " + card.getSuit() + ", Value : " + card.getValue());
+                //Then report the result here
+                if (card.getSuit().equals(userEnteredCardSuit) && card.getValue() == userEnteredCardValue) {
+                    System.out.println("Winner => The card you picked found in Magic Hand : " + card.getSuit() + " " + card.getValue());
+
+                    return;
+                }
+            }
+            System.out.println("Loss => card not found in Magic Hand");
             //Then report the result here
 
         } catch (Exception e) {
