@@ -32,14 +32,9 @@ public class CardTrick {
             magicHand [i] = c;
         }
         //ask the user for Card value and suit, create their card
-        Scanner input = new Scanner(System.in);
-        System.out.println("Enter the value of card: ");
-        int cardValue = Integer.parseInt(input.nextLine());
-        System.out.println("Enter the suit of card: ");
-        String cardSuit = input.nextLine();
         Card luckyCard = new Card();
-        luckyCard.setValue(cardValue);
-        luckyCard.setSuit(cardSuit);
+        luckyCard.setValue(3);
+        luckyCard.setSuit("Heart");
         
         // and search magicHand here
         boolean cardInHand = false;
