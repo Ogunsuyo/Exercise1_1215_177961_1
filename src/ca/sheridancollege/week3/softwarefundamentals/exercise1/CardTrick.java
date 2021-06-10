@@ -18,7 +18,7 @@ package ca.sheridancollege.week3.softwarefundamentals.exercise1;
 
 public class CardTrick {
     
-    public static void main(String[] args)
+    public static void main(String[] args) 
     {
         Card[] magicHand = new Card[7];
         
